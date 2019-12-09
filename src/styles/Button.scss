@@ -1,0 +1,16 @@
+@import "./common/Common";
+
+.button-container {
+  button {
+    background: $green-color;
+    @include font($large-font, 500, $white-color);
+    text-transform: uppercase;
+    padding: $standard-padding/3 $standard-padding/2;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    &:hover, &:focus {
+      outline: none;
+    }
+  }
+}

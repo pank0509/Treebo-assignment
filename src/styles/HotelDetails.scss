@@ -1,0 +1,60 @@
+@import "./common/Common";
+
+.hotel-details-container {
+  padding: $standard-padding $standard-padding*2;
+
+  .hotel-name {
+    color: $black-color;
+  }
+
+  .hotel-details {
+    display: flex;
+    .hotel-image {
+      width: 30%;
+      img {
+        width: 100%;
+      }
+    }
+    .hotel-info-container {
+      padding: 0 $standard-padding;
+      width: 70%;
+    }
+    .hotel-info {
+      @include font($medium-font, 100, $black-color);
+      padding-bottom: $standard-padding/2;
+    }
+    .detail-sub-heading {
+      @include font($xlarge-font, 900, $grey-color);
+      text-transform: capitalize;
+      padding: $standard-padding/2 0 $standard-padding/3;
+    }
+    .hotel-prices, .hotel-policies, .hotel-facilities-container {
+      @include font($medium-font, 100, $black-color);
+      padding-bottom: $standard-padding/2;
+    }
+    .price {
+      padding: $standard-padding/4 0;
+    }
+    .hotel-policies {
+      ul {
+        padding: 0 $ten * 1.5;
+        margin: 0;
+        li {
+          padding: $standard-padding/4 0;
+        }
+      }
+    }
+    .hotel-facilities-container {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      .essential-item {
+        width: 33%;
+        display: flex;
+        padding: $standard-padding/4 0;
+        min-width: 250px;
+      }
+    }
+  }
+}
+

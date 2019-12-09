@@ -1,0 +1,13 @@
+@import "common/Common";
+
+/*
+  App styles
+*/
+
+.app-container {
+  .app-content-container {
+    padding-top: $header-height;
+    height: calc(100vh - #{$header-height});
+    background: $white-color;
+  }
+}

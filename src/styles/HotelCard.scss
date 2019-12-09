@@ -1,0 +1,54 @@
+@import "./common/Common";
+
+.hotel-card {
+  margin: $standard-padding/2 0 $standard-padding;
+  padding: $standard-padding/2;
+  display: flex;
+  background: $white-color;
+  box-shadow: 5px 5px 10px #DCDCDC;
+  border-radius: 4px;
+  .hotel-image {
+    width: 200px;
+    img {
+      width: 100%;
+    }
+  }
+  .hotel-details {
+    padding: $standard-padding/2;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    a {
+      text-decoration: none;
+    }
+    .hotel-name {
+      @include font($heading-font, 900, $grey-color);
+      margin: 0;
+      text-decoration: none;
+      &:hover {
+        color: $green-color;
+        text-decoration: none;
+      }
+    }
+    .hotel-locality {
+      @include font($small-font, 100, $black-color);
+      padding: $standard-padding/4 0;
+    }
+    .hotel-price-container {
+      flex-flow: column;
+      position: relative;
+      width: 50%;
+      .price {
+        text-align: right;
+        @include font($xlarge-font, 100, $grey-color);
+        padding-bottom: $standard-padding;
+      }
+      .hotel-btn {
+        bottom: 0;
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+}

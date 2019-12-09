@@ -1,0 +1,12 @@
+@import "./common/Common";
+
+.hotel-list-container {
+  background: $light-grey-color;
+  min-height: calc(100vh - #{$header-height});
+  .hotel-list {
+    padding: $standard-padding;
+    width: 50%;
+    margin: auto;
+    min-width: 600px;
+  }
+}
